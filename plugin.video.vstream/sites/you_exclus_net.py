@@ -70,7 +70,7 @@ def showGenre(): #affiche les genres
     liste = []
     liste.append( ['Action','http://www.you-exclus.net/films/action/'] )
     liste.append( ['Animation','http://www.you-exclus.net/films/animation/'] )
-	liste.append( ['hd-720p','http://www.you-exclus.net/films/hd-720p/'] )
+    liste.append( ['hd-720p','http://www.you-exclus.net/films/hd-720p/'] )
     liste.append( ['Arts Martiaux','http://www.you-exclus.net/films/art-martiaux/'] )
     liste.append( ['Aventure','http://www.you-exclus.net/films/aventure/'] )
     liste.append( ['Biopic','http://www.you-exclus.net/films/biopic/'] )
@@ -111,7 +111,7 @@ def showMovies(sSearch = ''):
     sHtmlContent = oRequestHandler.request(); #requete aussi
     sHtmlContent = sHtmlContent.replace('<span class="likeThis">', '').replace('</span>','')
     #la function replace et pratique pour supprimer un code du resultat
-	sPattern = 'class="main-news-image"><a href="([^<]+)"><img data-src="([^<]+)"alt=(.+?)
+    sPattern = 'class="main-news-image"><a href="([^<]+)"><img data-src="([^<]+)"alt=(.+?)'
     #pour faire simple recherche ce bout de code dans le code source de l'url
     #- ([^<]+) je veut cette partie de code mais y a une suite
     #- .+? je ne veut pas cette partis et peux importe ceux qu'elle contient
